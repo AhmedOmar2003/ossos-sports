@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Default English title fallback; JS can handle document.title if needed, though this is primarily for structural HTML -->
+    <title>OSSOS Sports | أسس الرياضية</title>
+    
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="شركة رياضية رائدة متخصصة في تقديم حلول متكاملة للقطاع الرياضي. / A leading sports company specializing in integrated solutions for the sports sector.">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="OSSOS Sports"></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                <li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+            </ul>
+            
+            <div class="header-actions">
+                <button id="lang-switcher" class="lang-switcher">EN</button>
+                <a href="contact.html" class="btn btn-primary header-cta" data-ar="انضم إلينا" data-en="Join Us">انضم إلينا</a>
+                <button id="mobile-toggle" class="mobile-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: 120px; position: relative;">
+        <!-- Visual Background -->
+        <div class="bg-glow top-right"></div>
+        <div class="bg-glow bottom-left"></div>
+        
+        <div class="container grid grid-2 items-center gap-lg">
+            <div class="hero-content reveal">
+                <span class="subtitle" data-ar="شركة رياضية رائدة" data-en="Leading Sports Company">شركة رياضية رائدة</span>
+                <h1 class="title-xl" data-ar="نبني <span class='text-accent'>أبطال</span> المستقبل" data-en="Building Future <span class='text-accent'>Champions</span>">نبني <span class='text-accent'>أبطال</span> المستقبل</h1>
+                <p style="line-height:1.7" data-ar="أسس الرياضية (OSSOS Sports) هي شريكك الاستراتيجي للريادة الرياضية؛ حيث نقدم حلولاً احترافية متكاملة تبدأ من الاستشارات وتأسيس الأندية وتجهيزها، وصولاً لتشغيلها وتطوير الكفاءات بأعلى المعايير." data-en="OSSOS Sports is your strategic partner for sports leadership; offering comprehensive, professional solutions from consulting and establishing clubs, to operating them and developing talents.">أسس الرياضية (OSSOS Sports) هي شريكك الاستراتيجي للريادة الرياضية؛ حيث نقدم حلولاً احترافية متكاملة تبدأ من الاستشارات وتأسيس الأندية وتجهيزها، وصولاً لتشغيلها وتطوير الكفاءات بأعلى المعايير.</p>
+                <div class="flex" style="flex-wrap: wrap; margin-top: var(--spacing-md)">
+                    <a href="services.html" class="btn btn-primary" data-ar="ابدأ رحلتك" data-en="Start Journey">ابدأ رحلتك</a>
+                    <a href="about.html" class="btn btn-outline" data-ar="اكتشف المزيد" data-en="Learn More">اكتشف المزيد</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal delay-2" style="position: relative;">
+                <div class="hero-visual-container">
+                    <img src="images/hero-section.png" alt="OSSOS Sports Hero" style="width: 100%; max-height: 600px; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); object-fit: cover; position:relative; z-index:2;">
+                    
+                    <div class="floating-badge top-right">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <div>
+                            <span style="font-weight:700; display:block; line-height:1; color:var(--color-white);" data-ar="معايير عالمية" data-en="World-Class">معايير عالمية</span>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-badge bottom-left">
+                        <div style="background: var(--color-accent); width: 44px; height: 44px; border-radius: 50%; display:flex; align-items:center; justify-content:center; color: var(--color-primary); font-weight:800; font-size:1.25rem"><i class="ph-bold ph-trend-up"></i></div>
+                        <div>
+                            <span style="font-weight:700; display:block; line-height:1.2; color:var(--color-white);" data-ar="شريكك الأمثل" data-en="Optimal Partner">شريكك الأمثل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section section-dark">
+        <div class="container grid grid-2 items-center gap-lg">
+            <div class="reveal">
+                <div style="position:relative;">
+                    <div class="bg-glow center"></div>
+                    <img src="images/about-ossos.png" alt="About OSSOS Sports" style="width: 100%; height: 400px; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); object-fit: cover; position:relative; z-index:2;">
+                </div>
+            </div>
+            
+            <div class="reveal delay-2">
+                <span class="subtitle" data-ar="نبذة عن أسس" data-en="About OSSOS">نبذة عن أسس</span>
+                <h2 class="title-lg" data-ar="حلول متكاملة للقطاع الرياضي" data-en="Integrated Solutions for the Sports Sector">حلول متكاملة للقطاع الرياضي</h2>
+                <p data-ar="نفخر في 'أسس' بكوننا الوجهة الأولى للحلول الرياضية المتكاملة بالمملكة، حيث نجمع بين خبرة الاستشارات والتطوير الميداني لإنشاء بيئات رياضية تضمن الاستدامة والنجاح الإداري والرياضي." data-en="At OSSOS, we pride ourselves on being the premier destination for integrated sports solutions, combining consulting expertise with field development to create sustainable sports environments.">نفخر في 'أسس' بكوننا الوجهة الأولى للحلول الرياضية المتكاملة بالمملكة، حيث نجمع بين خبرة الاستشارات والتطوير الميداني لإنشاء بيئات رياضية تضمن الاستدامة والنجاح الإداري والرياضي.</p>
+                
+                <div class="grid grid-2" style="margin: var(--spacing-md) 0">
+                    <div>
+                        <h4 class="title-sm" data-ar="رؤيتنا" data-en="Our Vision">رؤيتنا</h4>
+                        <p data-ar="الريادة في صناعة الرياضة على مستوى الإقليم." data-en="Pioneering the sports industry across the region.">الريادة في صناعة الرياضة على مستوى الإقليم.</p>
+                    </div>
+                    <div>
+                        <h4 class="title-sm" data-ar="رسالتنا" data-en="Our Mission">رسالتنا</h4>
+                        <p data-ar="تمكين الرياضيين للنجاح بأفضل الممارسات." data-en="Empowering athletes to succeed using best practices.">تمكين الرياضيين للنجاح بأفضل الممارسات.</p>
+                    </div>
+                </div>
+                
+                <a href="about.html" class="btn btn-outline" data-ar="اقرأ المزيد" data-en="Read More">اقرأ المزيد</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center mx-auto reveal">
+                <span class="subtitle" data-ar="رحلة التعلم" data-en="Learning Journey">رحلة التعلم</span>
+                <h2 class="title-lg" data-ar="مسارات تدريبية متكاملة" data-en="Integrated Training Paths">مسارات تدريبية متكاملة</h2>
+                <p data-ar="صممت برامجنا بدقة لتلبي احتياجات مختلف المستويات الرياضية وفق منهجية علمية." data-en="Our programs are meticulously designed to meet the needs of various athletic levels using a scientific methodology.">صممت برامجنا بدقة لتلبي احتياجات مختلف المستويات الرياضية وفق منهجية علمية.</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <!-- Card 1 -->
+                <div class="card reveal delay-1">
+                    <div class="icon-box"><i class="ph ph-lightning"></i></div>
+                    <h3 class="title-md" data-ar="التأسيس الرياضي" data-en="Athletic Foundation">التأسيس الرياضي</h3>
+                    <span class="text-accent" style="margin-bottom:1rem; display:block; font-weight:700" data-ar="المدة: 3 أشهر" data-en="Duration: 3 Months">المدة: 3 أشهر</span>
+                    <p data-ar="بناء القدرات البدنية الأساسية للنشء وفق برامج مدروسة ومنهجية واضحة." data-en="Building fundamental physical capabilities for youth using studied programs.">بناء القدرات البدنية الأساسية للنشء وفق برامج مدروسة ومنهجية واضحة.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card reveal delay-2">
+                    <div class="icon-box"><i class="ph ph-target"></i></div>
+                    <h3 class="title-md" data-ar="تطوير المهارات" data-en="Skill Development">تطوير المهارات</h3>
+                    <span class="text-accent" style="margin-bottom:1rem; display:block; font-weight:700" data-ar="المدة: 6 أشهر" data-en="Duration: 6 Months">المدة: 6 أشهر</span>
+                    <p data-ar="التركيز على تنمية المهارات التخصصية الدقيقة للرياضيين للوصول للاحترافية." data-en="Focusing on precise specialized skills development for professional athletes.">التركيز على تنمية المهارات التخصصية الدقيقة للرياضيين للوصول للاحترافية.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card reveal delay-3">
+                    <div class="icon-box"><i class="ph ph-trophy"></i></div>
+                    <h3 class="title-md" data-ar="الأداء العالي" data-en="High Performance">الأداء العالي</h3>
+                    <span class="text-accent" style="margin-bottom:1rem; display:block; font-weight:700" data-ar="المدة: سنة" data-en="Duration: 1 Year">المدة: سنة</span>
+                    <p data-ar="تحضير النخبة للمنافسات والبطولات المحلية والدولية برعاية مدربين عالميين." data-en="Preparing the elite for local and international competitions.">تحضير النخبة للمنافسات والبطولات المحلية والدولية برعاية مدربين عالميين.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-dark">
+        <div class="bg-glow center"></div>
+        <div class="container">
+            <div class="flex justify-between items-center" style="margin-bottom: var(--spacing-lg)">
+                <div class="section-header" style="margin-bottom: 0">
+                    <span class="subtitle" data-ar="خدماتنا" data-en="Our Services">خدماتنا</span>
+                    <h2 class="title-lg" data-ar="حلول رياضية شاملة" data-en="Comprehensive Solutions">حلول رياضية شاملة</h2>
+                </div>
+                <a href="services.html" class="btn btn-outline" style="display: none; @media(min-width:768px){display:inline-flex}" data-ar="جميع الخدمات" data-en="All Services">جميع الخدمات</a>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card reveal delay-1">
+                    <div class="icon-box" style="width: 60px; height: 60px; font-size: 2rem;"><i class="ph ph-scales"></i></div>
+                    <h3 class="title-sm text-white" style="margin-bottom:0.5rem" data-ar="حوكمة الأندية الرياضية" data-en="Sports Clubs Governance">حوكمة الأندية الرياضية</h3>
+                    <p style="font-size:1rem; margin-bottom:0" data-ar="وضع السياسات واللوائح لضمان أعلى معايير الشفافية والإدارة المؤسسية." data-en="Setting policies and regulations to ensure the highest standards of transparency.">وضع السياسات واللوائح لضمان أعلى معايير الشفافية والإدارة المؤسسية.</p>
+                </div>
+                <div class="card reveal delay-2">
+                    <div class="icon-box" style="width: 60px; height: 60px; font-size: 2rem;"><i class="ph ph-blueprint"></i></div>
+                    <h3 class="title-sm text-white" style="margin-bottom:0.5rem" data-ar="تصميم الأندية الرياضية" data-en="Sports Clubs Design">تصميم الأندية الرياضية</h3>
+                    <p style="font-size:1rem; margin-bottom:0" data-ar="تصميم هندسي ومعماري يلبي المعايير العالمية للمرافق الرياضية." data-en="Modern architectural design meeting global standards for sports facilities.">تصميم هندسي ومعماري يلبي المعايير العالمية للمرافق الرياضية.</p>
+                </div>
+                <div class="card reveal delay-3">
+                    <div class="icon-box" style="width: 60px; height: 60px; font-size: 2rem;"><i class="ph ph-barbell"></i></div>
+                    <h3 class="title-sm text-white" style="margin-bottom:0.5rem" data-ar="تجهيز الأندية الرياضية" data-en="Sports Clubs Equipment">تجهيز الأندية الرياضية</h3>
+                    <p style="font-size:1rem; margin-bottom:0" data-ar="توفير أحدث الأجهزة والمعدات وفق أعلى مستويات الجودة والسلامة." data-en="Providing the latest sports equipment at the highest levels of quality and safety.">توفير أحدث الأجهزة والمعدات وفق أعلى مستويات الجودة والسلامة.</p>
+                </div>
+                <div class="card reveal delay-1">
+                    <div class="icon-box" style="width: 60px; height: 60px; font-size: 2rem;"><i class="ph ph-gear"></i></div>
+                    <h3 class="title-sm text-white" style="margin-bottom:0.5rem" data-ar="تشغيل الأندية الرياضية" data-en="Sports Clubs Operation">تشغيل الأندية الرياضية</h3>
+                    <p style="font-size:1rem; margin-bottom:0" data-ar="إدارة مقننة لتقديم تجربة استثنائية وبكفاءة عالية." data-en="Governed management to offer an exceptional experience efficiently.">إدارة مقننة لتقديم تجربة استثنائية وبكفاءة عالية.</p>
+                </div>
+                <div class="card reveal delay-2">
+                    <div class="icon-box" style="width: 60px; height: 60px; font-size: 2rem;"><i class="ph ph-graduation-cap"></i></div>
+                    <h3 class="title-sm text-white" style="margin-bottom:0.5rem" data-ar="تدريب وتطوير الكفاءات الرياضية" data-en="Talents Training">تدريب وتطوير الكفاءات الرياضية</h3>
+                    <p style="font-size:1rem; margin-bottom:0" data-ar="برامج تدريبية متطورة فنياً وإدارياً لتطوير المواهب." data-en="Advanced technical and administrative training programs to handle operations.">برامج تدريبية متطورة فنياً وإدارياً لتطوير المواهب.</p>
+                </div>
+                <div class="card reveal delay-3">
+                    <div class="icon-box" style="width: 60px; height: 60px; font-size: 2rem;"><i class="ph ph-trend-up"></i></div>
+                    <h3 class="title-sm text-white" style="margin-bottom:0.5rem" data-ar="تطوير الأعمال" data-en="Business Development">تطوير الأعمال</h3>
+                    <p style="font-size:1rem; margin-bottom:0" data-ar="استراتيجيات وخطط لتنمية وتوسيع نطاق أعمال المؤسسات." data-en="Strategies and plans to grow and scale business operations.">استراتيجيات وخطط لتنمية وتوسيع نطاق أعمال المؤسسات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container grid grid-2 items-center gap-lg">
+            <div class="reveal">
+                <span class="subtitle" data-ar="لماذا أسس؟" data-en="Why OSSOS?">لماذا أسس؟</span>
+                <h2 class="title-lg" data-ar="شريكك الأمثل نحو القمة" data-en="Your Ultimate Partner">شريكك الأمثل نحو القمة</h2>
+                <p data-ar="نجمع بين الخبرة الأكاديمية والممارسة الميدانية لنقدم تجربة رياضية استثنائية وبناء قوي." data-en="We combine academic expertise and field practice to offer an exceptional sports experience.">نجمع بين الخبرة الأكاديمية والممارسة الميدانية لنقدم تجربة رياضية استثنائية وبناء قوي.</p>
+                
+                <div class="grid grid-2" style="margin-top:var(--spacing-md)">
+                    <div class="flex items-center gap-sm">
+                        <div class="icon-box" style="width:48px;height:48px;font-size:1.5rem;margin:0"><i class="ph ph-check-circle"></i></div>
+                        <div style="flex:1">
+                            <h4 class="title-sm text-white" style="margin-bottom:0.25rem" data-ar="كوادر معتمدة" data-en="Certified Staff">كوادر معتمدة</h4>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-sm">
+                        <div class="icon-box" style="width:48px;height:48px;font-size:1.5rem;margin:0"><i class="ph ph-check-circle"></i></div>
+                        <div style="flex:1">
+                            <h4 class="title-sm text-white" style="margin-bottom:0.25rem" data-ar="تقنيات حديثة" data-en="Latest Tech">تقنيات حديثة</h4>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-sm">
+                        <div class="icon-box" style="width:48px;height:48px;font-size:1.5rem;margin:0"><i class="ph ph-check-circle"></i></div>
+                        <div style="flex:1">
+                            <h4 class="title-sm text-white" style="margin-bottom:0.25rem" data-ar="مناهج عالمية" data-en="Global Logic">مناهج عالمية</h4>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-sm">
+                        <div class="icon-box" style="width:48px;height:48px;font-size:1.5rem;margin:0"><i class="ph ph-check-circle"></i></div>
+                        <div style="flex:1">
+                            <h4 class="title-sm text-white" style="margin-bottom:0.25rem" data-ar="تطور مستمر" data-en="Continuous Growth">تطور مستمر</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reveal delay-2" style="position: relative;">
+                <div class="bg-glow center"></div>
+                <img src="images/why-ossos.png" alt="Why OSSOS Sports" style="width: 100%; height: auto; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: 0 0 60px rgba(32,173,131,0.15), var(--shadow-lg); object-fit: contain; position: relative; z-index: 2; display: block;">
+                <div style="position:absolute; bottom: 24px; right: 24px; z-index:3; background: rgba(27,34,61,0.85); backdrop-filter: blur(12px); border: 1px solid rgba(32,173,131,0.4); border-radius: var(--radius-md); padding: 14px 20px; display:flex; align-items:center; gap:12px;">
+                    <div style="background:var(--color-accent); width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--color-primary); font-size:1.2rem; flex-shrink:0;">
+                        <i class="ph-bold ph-check-circle"></i>
+                    </div>
+                    <div>
+                        <span style="font-weight:800; color:var(--color-white); display:block; font-size:1rem;" data-ar="شريك رياضي موثوق" data-en="Trusted Sports Partner">شريك رياضي موثوق</span>
+                        <span style="color:var(--color-accent); font-size:0.85rem; font-weight:600;" data-ar="خبرة متكاملة في القطاع الرياضي" data-en="Full-Spectrum Sports Expertise">خبرة متكاملة في القطاع الرياضي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA & Contact -->
+    <section class="section section-dark text-center" style="padding-bottom: var(--spacing-xxl);">
+        <div class="container reveal">
+            <h2 class="title-xl" data-ar="مستعد لبدء مسيرتك؟" data-en="Ready to Start?">مستعد لبدء مسيرتك؟</h2>
+            <p style="max-width:600px; margin:var(--spacing-md) auto;" data-ar="انضم إلى مجتمع أسس الرياضي واكتشف إمكانياتك الحقيقية مع نخبة المدربين." data-en="Join the OSSOS sports community and discover your true potential with elite coaches.">انضم إلى مجتمع أسس الرياضي واكتشف إمكانياتك الحقيقية مع نخبة المدربين.</p>
+            <a href="contact.html" class="btn btn-primary" data-ar="تواصل معنا الآن" data-en="Contact Us Now">تواصل معنا الآن</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4 gap-lg">
+                <div class="reveal delay-1">
+                    <a href="index.html" class="logo footer-logo"><img src="images/logo.jpg" alt="OSSOS Sports"></a>
+                    <p class="footer-desc text-muted" style="line-height:1.7" data-ar="علامة سعودية متخصصة في الحلول الرياضية المتكاملة؛ من الاستشارات وتأسيس الأندية، إلى التجهيز والتشغيل والتدريب الاحترافي." data-en="A Saudi brand specializing in integrated sports solutions; from consulting and club establishment, to equipping, operating, and professional training.">علامة سعودية متخصصة في الحلول الرياضية المتكاملة؛ من الاستشارات وتأسيس الأندية، إلى التجهيز والتشغيل والتدريب الاحترافي.</p>
+                </div>
+                <div class="reveal delay-2">
+                    <h4 class="footer-title" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="services.html" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+                        <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="reveal delay-3">
+                    <h4 class="footer-title" data-ar="البرامج الرياضية" data-en="Programs">البرامج الرياضية</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html" data-ar="التأسيس الرياضي" data-en="Athletic Foundation">التأسيس الرياضي</a></li>
+                        <li><a href="services.html" data-ar="تطوير المهارات" data-en="Skill Development">تطوير المهارات</a></li>
+                        <li><a href="services.html" data-ar="المعسكرات" data-en="Camps">المعسكرات</a></li>
+                    </ul>
+                </div>
+                <div class="reveal delay-4">
+                    <h4 class="footer-title" data-ar="تواصل معنا" data-en="Get In Touch">تواصل معنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@ossos.sa">info@ossos.sa</a></li>
+                        <li><a href="tel:+9660530304455" dir="ltr">+966 0530304455</a></li>
+                        <li class="text-muted" data-ar="الرياض - المرسلات - شارع الأمير مقرن بن عبدالعزيز" data-en="Riyadh - Al Mursalat - Prince Muqrin Bin Abdulaziz St">الرياض - المرسلات - شارع الأمير مقرن بن عبدالعزيز</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="جميع الحقوق محفوظة &copy; 2026 أسس الرياضية" data-en="All rights reserved &copy; 2026 OSSOS Sports">جميع الحقوق محفوظة &copy; 2026 أسس الرياضية</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
