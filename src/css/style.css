@@ -264,6 +264,17 @@ p {
   transform: scale(1.05) rotate(-5deg);
 }
 
+.about-value-card {
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.about-value-card p {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.9;
+}
+
 /* =========================================
    HEADER & NAVIGATION
    ========================================= */
@@ -502,6 +513,15 @@ textarea.form-control {
   /* Container & Grid Elements */
   .container { padding: 0 1rem; }
   .card { padding: 1.25rem; }
+  .about-value-card {
+    padding: 2rem 1.5rem !important;
+  }
+  .about-value-card p {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 0;
+  }
   
   /* Form Tweaks */
   .form-control { padding: 0.875rem 1rem; font-size: 1rem; }
