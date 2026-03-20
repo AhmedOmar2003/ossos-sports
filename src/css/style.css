@@ -54,6 +54,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -126,8 +127,8 @@ p {
   padding: 0 var(--spacing-sm);
 }
 
-.section { padding: var(--spacing-xl) 0; position: relative; }
-.section-sm { padding: var(--spacing-lg) 0; position: relative; }
+.section { padding: var(--spacing-xl) 0; position: relative; overflow: hidden; }
+.section-sm { padding: var(--spacing-lg) 0; position: relative; overflow: hidden; }
 .section-dark { background-color: var(--color-dark); border-top: 1px solid rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.03); }
 
 .text-center { text-align: center; }
