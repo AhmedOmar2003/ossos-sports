@@ -494,13 +494,17 @@ textarea.form-control {
    ========================================= */
 @media (max-width: 768px) {
   /* Layout Spacing */
-  .section { padding: 3rem 0; }
-  .section-sm { padding: 2rem 0; }
+  .section { padding: 3rem 0; overflow: hidden; }
+  .section-sm { padding: 2rem 0; overflow: hidden; }
   .gap-lg { gap: 1.5rem !important; }
   
   /* Container & Grid Elements */
   .container { padding: 0 1rem; }
-  .card { padding: 1.5rem; }
+  .card { padding: 1.25rem; }
+  
+  /* Form Tweaks */
+  .form-control { padding: 0.875rem 1rem; font-size: 1rem; }
+  .form-card { padding: 1.5rem !important; }
   
   /* Fix Hero Area Overflow */
   .hero-visual-container { margin-top: 2rem; }
