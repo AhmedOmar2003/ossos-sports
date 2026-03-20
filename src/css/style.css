@@ -474,6 +474,7 @@ textarea.form-control {
   box-shadow: var(--shadow-lg);
   z-index: 10;
   animation: floatBadge 4s ease-in-out infinite;
+  pointer-events: none;
 }
 .floating-badge.top-right { top: 20px; right: -20px; }
 .floating-badge.bottom-left { bottom: 30px; left: -20px; animation-delay: 1.5s; }
@@ -548,4 +549,3 @@ textarea.form-control {
     width: 90% !important;
   }
 }
-
