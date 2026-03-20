@@ -487,3 +487,60 @@ textarea.form-control {
 [dir="ltr"] .floating-badge.top-right { left: -20px; right: auto; }
 [dir="rtl"] .floating-badge.bottom-left { left: -20px; right: auto; }
 [dir="ltr"] .floating-badge.bottom-left { right: -20px; left: auto; }
+
+/* =========================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 768px) {
+  /* Layout Spacing */
+  .section { padding: 3rem 0; }
+  .section-sm { padding: 2rem 0; }
+  .gap-lg { gap: 1.5rem !important; }
+  
+  /* Container & Grid Elements */
+  .container { padding: 0 1rem; }
+  .card { padding: 1.5rem; }
+  
+  /* Fix Hero Area Overflow */
+  .hero-visual-container { margin-top: 2rem; }
+  
+  /* Shrink & Contain Floating Badges */
+  .floating-badge {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+  }
+  .floating-badge span { font-size: 0.9rem !important; }
+  .floating-badge .stars { font-size: 1rem; }
+  
+  /* Pull badges inside so they don't break horizontal scrolling (overflow-x) */
+  .floating-badge.top-right { top: 10px; right: 10px; }
+  .floating-badge.bottom-left { bottom: 10px; left: 10px; }
+  [dir="rtl"] .floating-badge.top-right { right: 10px; left: auto; }
+  [dir="ltr"] .floating-badge.top-right { left: 10px; right: auto; }
+  [dir="rtl"] .floating-badge.bottom-left { left: 10px; right: auto; }
+  [dir="ltr"] .floating-badge.bottom-left { right: 10px; left: auto; }
+  
+  /* Typography Adjustments */
+  .title-xl { font-size: 2.5rem; line-height: 1.2; }
+  .title-lg { font-size: 2rem; line-height: 1.3; }
+  
+  /* Buttons */
+  .btn { width: 100%; justify-content: center; }
+  .hero-content .flex { flex-direction: column; width: 100%; }
+  
+  /* Footer */
+  .footer { padding-top: 3rem; text-align: center; }
+  .footer-logo { margin: 0 auto 1rem auto; display: block; }
+  .footer-desc { margin: 0 auto; }
+  
+  /* Image sizing fixes */
+  img[src="images/why-ossos.png"] { width: 100% !important; margin-bottom: 1rem; }
+  div[style*="rgba(27,34,61,0.85)"] {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    margin: 1rem auto 0 auto !important;
+    width: 90% !important;
+  }
+}
+
